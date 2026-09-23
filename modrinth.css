@@ -1,0 +1,135 @@
+/**
+ * Kinda CurseForge-y theme for Modrinth
+ *
+ * @author Olafcio
+ * @website https://olafcio1.github.io
+ */
+
+body {
+    background: #000000;
+}
+
+a[href="/"] > svg {
+    filter: hue-rotate(244deg);
+}
+
+header {
+    background: linear-gradient(0deg, #0000, #000 10%), linear-gradient(90deg, #000, #fff1, #000);
+}
+
+.max-md\:flex-col {
+    background: linear-gradient(180deg, #0000, #000), linear-gradient(90deg, #000, #fff1, #000);
+    margin-inline: -16px;
+    padding-block: 24px;
+    padding-left: 15px;
+}
+
+.flex.gap-2.border-divider {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.ui-normal-page {
+    padding-top: 0!important;
+    gap: 2px!important;
+}
+
+a[href].inline-flex.text-contrast {
+    background: #222;
+    border-radius: 0;
+    /* box-shadow: 0 0 0 1px #fff3, 0 0 15px 2px #fff2; */
+    text-transform: uppercase;
+    color: #abb6bb;
+    font-size: .8em;
+    width: 50px;
+    height: 48px;
+    overflow: visible;
+    display: block;
+    padding-inline: 0;
+    text-align: center;
+
+    > svg {
+        position: absolute;
+        top: 23%;
+        margin-left: 4px;
+    }
+
+    &::before {
+        content: '';
+        display: block;
+        height: 55px;
+    }
+}
+
+button.inline-flex.px-3\.5 {
+    border-radius: 5px!important;
+    aspect-ratio: 1 / 1;
+    width: 32px;
+}
+
+div[role="menu"] {
+    background: #0004;
+    backdrop-filter: blur(5px) saturate(0) sepia(1) hue-rotate(5deg) contrast(1.2) saturate(0);
+    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px, #462e1b 0px 0px 0px 1px, rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.1) 0px 4px 6px -4px, 0 0 15px #000;
+    border-radius: 0;
+}
+
+.button-menu-arrow::before {
+    border-color: #462e1b!important;
+    background: #000!important;
+}
+
+nav {
+    background: #000!important;
+    border: none!important;
+    border-radius: 0!important;
+    filter: hue-rotate(245deg);
+    width: 100%!important;
+    padding-bottom: 5px!important;
+    /* border-bottom: 1px solid #333!important; */
+    margin-bottom: 5px;
+
+    > * { height: 35px!important }
+
+    .navtabs-transition {
+        border-radius: 8px!important;
+    }
+}
+
+/*.group\/button-menu-item*/
+[role="menuitem"] {
+    border-radius: 0!important;
+
+    &:hover {
+        background: #222a;
+        backdrop-filter: blur(25px);
+    }
+}
+
+.gap-3[role="list"] {
+    > .smart-clickable > .project-card-container > div {
+        background: #040403!important;
+        border-color: #9e503247;
+
+        :hover > * > & {
+            background: #1d1813!important;
+        }
+
+        .grid-project-card-list__tags > div > div > div {
+            background: #fff1;
+            border: 1px solid #fff1;
+            border-radius: 3px;
+
+            > * { background: #0000; border-radius: inherit; border: none }
+        }
+    }
+}
+
+.card {
+  border-radius: 3px!important;
+  background: #000;
+}
+
+body {
+  background: #000!important;
+}
