@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Unseen",
+  "description": "Restyles the web",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "css": [
+        "modrinth.css"
+      ],
+      "matches": [
+        "https://modrinth.com/*"
+      ]
+    }
+  ]
+}
